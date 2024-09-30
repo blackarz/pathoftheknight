@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="2"
+        >
+
+        <ImageView
+            android:id="@+id/BackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backbtn"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/SettingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:text="Score: 0"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/levelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level: 1"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        />
+
+    <GridLayout
+        android:id="@+id/elementGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D22127"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/mixButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/retrybtn"
+        android:layout_margin="10dp"
+        android:text="Mix" />
+
+    <ImageView
+        android:id="@+id/submitOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/readybtn"
+        android:text="Submit Order" />
+
+</LinearLayout>
+
+</LinearLayout>
